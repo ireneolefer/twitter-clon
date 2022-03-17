@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
 });
 
 const renderTweet = (data = mockData) => {
-  const feedBlock = document.querySelector(".feed");
+  const feedBlock = document.querySelector(".tweets");
   let tweetString = "";
   for (let i = 0; i < data.length; i++) {
     tweetString += `
