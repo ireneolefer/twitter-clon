@@ -97,10 +97,22 @@
   @apply border-neutral-800
 
   .text_tweet
+    @apply px-4 py-4
+    @apply flex 
     .pic02
+      @apply inline
       .ph-user-circle
         @apply text-6xl
     .write
+      input
+        @apply pl-4
+        @apply w-72
+        @apply bg-black
+    .buttom_tweet02
+        @apply text-sm
+        @apply bg-blue-500
+        @apply w-32 py-2 rounded-full
+        margin-top: 30px
     
 
   .tweet
@@ -142,6 +154,8 @@
         .coment
         .retweet
         .like
+          .ph-heart
+            @apply text-sm
 
 .aside
   @apply bg-neutral-800

@@ -34,7 +34,9 @@ const renderTweet = (data = mockData) => {
         <div class="linea02">
           <div class="coment">${data[i].Coment}t</div>
           <div class="retweet">${data[i].Retweet}</div>
-          <div class="like">${data[i].Like}</div>
+          <div class="like">${data[i].Like}
+            <i class="ph-heart"></i>
+          </div>
         </div>
       </div>
       
