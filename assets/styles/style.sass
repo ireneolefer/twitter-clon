@@ -1,0 +1,167 @@
+@import "partials/_aside"
+
+*
+ // border: 0.2px solid gray
+
+// layout
+
+.body
+  @apply text-lg
+  @apply bg-black
+  @apply text-white
+  font-family: sans-serif
+  
+.twitter
+  @apply min-h-screen max-w-[1180px] w-full mx-auto
+  @apply grid grid-cols-[250px_1fr_350px] grid-rows-[auto_1fr]
+  @apply space-x-4
+  @apply py-4
+  .logo
+  .title
+  .search
+  .menu
+  .feed
+  .aside
+
+// logo
+.logo 
+  @apply px-4
+  display: flex 
+  align-items: center
+  img
+
+
+// title
+.title
+  @apply border-x-2
+  @apply border-neutral-800
+  @apply flex justify-between items-center
+  @apply font-bold
+  @apply px-4
+  @apply text-xl
+  .title_content
+  .title_icon
+    .ph-sparkle
+      font-size: 20px
+
+
+// search
+.search
+  @apply flex justify-between items-center
+  @apply px-4 py-2 rounded-full
+  @apply bg-neutral-800
+  .icon
+    .ph-magnifying-glass
+      @apply text-neutral-300
+      @apply pr-2
+  input
+    @apply w-72
+    @apply bg-neutral-800
+
+
+//menu
+.menu
+  .menu_items
+    .menu_item01
+      a
+        @apply text-white
+        @apply flex justify-start items-center
+        margin-top: 20px
+
+        .icon01
+          font-size: 25px
+        .label01
+          @apply px-5
+
+    .menu_item
+      a
+        @apply text-neutral-400
+        @apply flex justify-start items-center
+        margin-top: 20px
+
+        .icon
+          font-size: 25px
+          img
+        .label
+          @apply px-5
+      .buttom_tweet
+        @apply bg-blue-500
+        @apply w-52 py-2 rounded-full
+        margin-top: 30px
+
+
+// feed
+.feed
+  @aplly px-5
+  @apply border-x-2
+  @apply border-neutral-800
+
+  .text_tweet
+    .pic02
+      .ph-user-circle
+        @apply text-6xl
+    .write
+    
+
+  .tweet
+    @apply px-4
+    @apply py-5
+    @apply flex justify-between
+    @apply gap-4
+    @apply border-t-2
+    @apply border-neutral-800
+
+
+    .pic
+      .ph-user-circle
+        @apply text-6xl
+      
+    .info
+      @apply pl-2
+      @apply text-sm
+      @apply w-full
+      .linea01
+        @apply mr-2
+        @apply flex
+        .nombre
+          @apply font-bold
+          @apply pr-2
+        .usuario
+          @apply text-neutral-400
+          @apply pr-2
+        .fecha
+          @apply text-neutral-400
+
+      .texto
+        @apply my-4
+      .linea02
+        @apply flex justify-start items-center 
+        @apply text-neutral-400
+        @apply gap-10
+
+        .coment
+        .retweet
+        .like
+
+.aside
+  @apply bg-neutral-800
+  @apply rounded-xl
+  margin-top: 20px
+  height: fit-content
+  .title01
+     @apply font-bold
+     @apply text-xl
+     @apply px-5 py-4
+
+  .content
+    @apply px-5 py-4
+    @apply text-lg
+
+  .aside_item
+    @apply flex justify-start items-center
+    @apply py-2
+    .icon
+    .label
+      @apply px-1
+  
+
