@@ -1,7 +1,7 @@
 @import "partials/_aside"
 
 *
- // border: 0.2px solid gray
+ //border: 0.2px solid gray
 
 // layout
 
@@ -97,22 +97,24 @@
   @apply border-neutral-800
 
   .text_tweet
-    @apply px-4 py-4
-    @apply flex 
-    .pic02
-      @apply inline
-      .ph-user-circle
-        @apply text-6xl
-    .write
-      input
-        @apply pl-4
-        @apply w-72
-        @apply bg-black
-    .buttom_tweet02
+    @apply px-4 py-4 
+    .caja1
+      @apply flex
+      .pic02
+        @apply inline
+        .ph-user-circle
+          @apply text-6xl
+      .write
+        input
+          @apply pl-4
+          @apply w-96
+          @apply bg-black
+    .menu_item
+      @apply ml-96
+      .buttom_tweet02
         @apply text-sm
         @apply bg-blue-500
         @apply w-32 py-2 rounded-full
-        margin-top: 30px
     
 
   .tweet
@@ -123,6 +125,7 @@
     @apply border-t-2
     @apply border-neutral-800
 
+    
 
     .pic
       .ph-user-circle
