@@ -49,14 +49,14 @@
 .search
   @apply flex justify-between items-center
   @apply px-4 py-2 rounded-full
-  @apply bg-neutral-800
+  @apply bg-neutral-800 
   .icon
     .ph-magnifying-glass
       @apply text-neutral-300
       @apply pr-2
   input
     @apply w-72
-    @apply bg-neutral-800
+    @apply bg-neutral-800 outline-none
 
 
 //menu
@@ -105,13 +105,18 @@
         .ph-user-circle
           @apply text-6xl
       .write
-        input
-          @apply pl-4
-          @apply w-96
-          @apply bg-black
+        textarea
+          @apply bg-transparent
+          @apply min-h-fit
+        //input
+          //@apply pl-4
+          //@apply w-96
+          //@apply bg-black
+          //@apply outline-none
     .menu_item
       @apply ml-96
       .buttom_tweet02
+        @apply mt-4
         @apply text-sm
         @apply bg-blue-500
         @apply w-32 py-2 rounded-full
